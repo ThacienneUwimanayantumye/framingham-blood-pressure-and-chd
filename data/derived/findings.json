@@ -1,0 +1,63 @@
+{
+  "n": 1394,
+  "n_female": 731,
+  "n_male": 663,
+  "high_bp_rate": 0.6499282639885222,
+  "n_prevalent_chd": 42,
+  "n_incident_eligible": 1352,
+  "incident_chd_rate": 0.19600591715976332,
+  "haschd_mixed_rate": 0.22022955523672882,
+  "example_person": {
+    "raw": {
+      "CHOL": 200.0,
+      "CIG": 17.0,
+      "FRW": 100.0,
+      "AGE": 52.43113342898135
+    },
+    "scaled": {
+      "sCHOL": -0.37410417825308084,
+      "sCIG": 0.3871927538102119,
+      "sFRW": -0.1511094123560532,
+      "sAGE": 0.0
+    },
+    "p_incident_chd": {
+      "female": 0.1162719049092491,
+      "male": 0.22570272660699103
+    },
+    "note": "Cholesterol 200, 17 cigarettes/day, relative weight 100, sample-mean age. Scaled with (x \u2212 mean) / (2 \u00d7 sd) on the raw columns."
+  },
+  "cv": {
+    "HIGH_BP": {
+      "accuracy": 0.667204301075269,
+      "roc_auc": 0.6623613146916226,
+      "brier": 0.21227253482026906,
+      "majority_accuracy": 0.6487455197132616,
+      "sensitivity": 0.9073480662983425,
+      "pred_positive_rate": 0.8613261648745519
+    },
+    "incident_chd": {
+      "accuracy": 0.8038007380073801,
+      "roc_auc": 0.6465579020252727,
+      "brier": 0.1506091585920578,
+      "majority_accuracy": 0.8044280442804427,
+      "sensitivity": 0.0069811320754716985,
+      "pred_positive_rate": 0.0033579335793357933
+    }
+  },
+  "chd_in_sample_auc": {
+    "without_age_sex": 0.5931922723091076,
+    "main_effects": 0.6564510249778687,
+    "main_plus_interactions": 0.6573397441460832
+  },
+  "chd_in_sample_aic": {
+    "without_age_sex": 1327.9224896004296,
+    "main_effects": 1281.302130422381,
+    "main_plus_interactions": 1285.4927111390405
+  },
+  "sbp_r_squared": {
+    "sbp_base": 0.12530292100516682,
+    "sbp_age": 0.1460572933325074,
+    "sbp_interactions": 0.15059937303785031,
+    "sbp_smoking": 0.1522581380062683
+  }
+}
