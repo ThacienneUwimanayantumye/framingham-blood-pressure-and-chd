@@ -42,8 +42,8 @@ A person with cholesterol 200, 17 cigarettes a day, relative weight 100, and sam
 ## How to run
 
 ```bash
-git clone https://github.com/ThacienneUwimanayantumye/Regression-Analysis_of_Health_Data.git
-cd Regression-Analysis_of_Health_Data
+git clone https://github.com/ThacienneUwimanayantumye/framingham-blood-pressure-and-chd.git
+cd framingham-blood-pressure-and-chd
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
